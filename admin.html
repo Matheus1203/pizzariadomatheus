@@ -8,17 +8,17 @@
   </head>
   <body>
     <aside class="barra-lateral">
-      <a class="marca" href="index.html">🍕 Pizzaria do Matheus</a>
+      <a class="marca" href="index.html">ðŸ• Pizzaria do Matheus</a>
       <p>Painel administrativo</p>
       <nav>
         <a href="#pedidos">Pedidos</a><a href="#suporte">Suporte</a
-        ><a href="#avaliacoes">Avaliações</a><a href="index.html">Ver loja</a>
+        ><a href="#avaliacoes">AvaliaÃ§Ãµes</a><a href="index.html">Ver loja</a><form method="post" action="/logout"><button type="submit">Sair</button></form>
       </nav>
     </aside>
     <main>
       <header class="topo-admin">
         <div>
-          <p>Visão geral</p>
+          <p>VisÃ£o geral</p>
           <h1>Controle da pizzaria</h1>
         </div>
         <button id="criar-exemplo">Criar pedido de exemplo</button>
@@ -34,7 +34,7 @@
           <span>Conversas</span><strong id="total-chats">0</strong>
         </article>
         <article>
-          <span>Média</span><strong id="media-avaliacoes">0,0 ★</strong>
+          <span>MÃ©dia</span><strong id="media-avaliacoes">0,0 â˜…</strong>
         </article>
       </section>
       <section id="pedidos" class="painel-pedidos">
@@ -52,15 +52,15 @@
       </section>
       <section id="suporte" class="painel-pedidos painel-extra">
         <h2>Suporte</h2>
-        <p>Responda às mensagens dos clientes.</p>
+        <p>Responda Ã s mensagens dos clientes.</p>
         <div id="lista-chats" class="lista-admin"></div>
       </section>
       <section id="avaliacoes" class="painel-pedidos painel-extra">
-        <h2>Avaliações</h2>
-        <p>Acompanhe ou exclua comentários.</p>
+        <h2>AvaliaÃ§Ãµes</h2>
+        <p>Acompanhe ou exclua comentÃ¡rios.</p>
         <div id="lista-avaliacoes" class="lista-admin"></div>
       </section>
     </main>
-    <script src="admin.js"></script>
+    <script src="admin.js"></script><script src="admin-db.js"></script>
   </body>
 </html>
