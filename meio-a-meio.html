@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pizza Meio a Meio | Pizzaria do Matheus</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="meio-a-meio.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a class="logo" href="index.html">🍕 Pizzaria do Matheus</a>
+      <nav class="menu">
+        <a href="index.html">Cardápio</a
+        ><a href="meio-a-meio.html">Meio a meio</a>
+      </nav>
+    </header>
+    <main class="pagina-montador">
+      <section class="apresentacao-montador">
+        <p class="etiqueta">Monte do seu jeito</p>
+        <h1>Duas metades, uma pizza perfeita.</h1>
+        <p>Escolha dois sabores. O valor será o do sabor mais caro.</p>
+      </section>
+      <section class="montador montador-pagina">
+        <div class="campos-sabores">
+          <label>Primeira metade<select id="primeiro-sabor"></select></label
+          ><span class="mais-sabores">+</span
+          ><label>Segunda metade<select id="segundo-sabor"></select></label>
+        </div>
+        <div class="resumo-montagem">
+          <p id="descricao-pizza"></p>
+          <p class="preco-meio-a-meio">
+            Preço: <strong id="preco-meio-a-meio">R$ 0,00</strong>
+          </p>
+        </div>
+        <button id="finalizar-meio-a-meio" class="botao-adicionar">
+          Fazer pedido
+        </button>
+      </section>
+    </main>
+    <footer class="rodape">
+      © <span id="ano-atual"></span> Pizzaria do Matheus
+    </footer>
+    <div id="mensagem" class="mensagem" role="status"></div>
+    <script src="meio-a-meio.js"></script>
+  </body>
+</html>

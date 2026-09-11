@@ -1,3 +1,69 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pagamento Pix | Pizzaria do Matheus</title><link rel="stylesheet" href="pagamento.css"></head><body>
-<header><a href="index.html">← Voltar ao cardápio</a><strong>🍕 Pizzaria do Matheus</strong></header><main><section class="pagamento"><div class="titulo"><span>Pagamento seguro</span><h1>Pague seu pedido com Pix</h1><p>Escaneie o QR Code ou copie o código abaixo.</p></div><div class="conteudo"><div class="qr"><div class="qr-rascunho"><span>QR</span><small>RASCUNHO</small></div><p>Abra seu banco e escolha <strong>Pix → Pagar com QR Code</strong>.</p></div><div class="dados"><p class="rotulo">Valor do pedido</p><strong id="valor" class="valor">R$ 0,00</strong><p class="rotulo">Código Pix copia e cola</p><div class="codigo"><code id="codigo-pix">PIX-DE-EXEMPLO-PIZZARIA-DO-MATHEUS</code><button id="copiar">Copiar</button></div><div class="status"><span></span><div><strong>Aguardando pagamento</strong><p>Esta tela é apenas um rascunho. O pagamento ainda não é processado.</p></div></div></div></div></section></main><footer>Ambiente demonstrativo • Não realize pagamentos reais</footer>
-<script>const p=new URLSearchParams(location.search),total=Number(p.get('total'));if(total)document.querySelector('#valor').textContent=total.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});document.querySelector('#copiar').onclick=async()=>{await navigator.clipboard.writeText(document.querySelector('#codigo-pix').textContent);document.querySelector('#copiar').textContent='Copiado!'};</script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pagamento Pix | Pizzaria do Matheus</title>
+    <link rel="stylesheet" href="pagamento.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">← Voltar ao cardápio</a
+      ><strong>🍕 Pizzaria do Matheus</strong>
+    </header>
+    <main>
+      <section class="pagamento">
+        <div class="titulo">
+          <span>Pagamento seguro</span>
+          <h1>Pague seu pedido com Pix</h1>
+          <p>Escaneie o QR Code ou copie o código abaixo.</p>
+        </div>
+        <div class="conteudo">
+          <div class="qr">
+            <div class="qr-rascunho">
+              <span>QR</span><small>RASCUNHO</small>
+            </div>
+            <p>
+              Abra seu banco e escolha <strong>Pix → Pagar com QR Code</strong>.
+            </p>
+          </div>
+          <div class="dados">
+            <p class="rotulo">Valor do pedido</p>
+            <strong id="valor" class="valor">R$ 0,00</strong>
+            <p class="rotulo">Código Pix copia e cola</p>
+            <div class="codigo">
+              <code id="codigo-pix">PIX-DE-EXEMPLO-PIZZARIA-DO-MATHEUS</code
+              ><button id="copiar">Copiar</button>
+            </div>
+            <div class="status">
+              <span></span>
+              <div>
+                <strong>Aguardando pagamento</strong>
+                <p>
+                  Esta tela é apenas um rascunho. O pagamento ainda não é
+                  processado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Ambiente demonstrativo • Não realize pagamentos reais</footer>
+    <script>
+      const p = new URLSearchParams(location.search),
+        total = Number(p.get("total"));
+      if (total)
+        document.querySelector("#valor").textContent = total.toLocaleString(
+          "pt-BR",
+          { style: "currency", currency: "BRL" },
+        );
+      document.querySelector("#copiar").onclick = async () => {
+        await navigator.clipboard.writeText(
+          document.querySelector("#codigo-pix").textContent,
+        );
+        document.querySelector("#copiar").textContent = "Copiado!";
+      };
+    </script>
+  </body>
+</html>

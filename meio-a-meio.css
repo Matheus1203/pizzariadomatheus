@@ -1,0 +1,32 @@
+.pagina-montador {
+  min-height: calc(100vh - 150px);
+  padding: 70px 7%;
+  background:
+    linear-gradient(#2b211dcc, #2b211dcc),
+    url("imagens/capa-pizzaria.png") center/cover fixed;
+}
+.apresentacao-montador {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+  color: #fff;
+}
+.apresentacao-montador h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.08;
+}
+.montador-pagina {
+  max-width: 820px;
+}
+.resumo-montagem {
+  margin-bottom: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: var(--creme);
+}
+@media (max-width: 700px) {
+  .pagina-montador {
+    padding: 45px 5%;
+  }
+}

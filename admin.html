@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <aside class="barra-lateral">
+      <a class="marca" href="index.html">🍕 Pizzaria do Matheus</a>
+      <p>Painel administrativo</p>
+      <nav>
+        <a href="#pedidos">Pedidos</a><a href="#suporte">Suporte</a
+        ><a href="#avaliacoes">Avaliações</a><a href="index.html">Ver loja</a>
+      </nav>
+    </aside>
+    <main>
+      <header class="topo-admin">
+        <div>
+          <p>Visão geral</p>
+          <h1>Controle da pizzaria</h1>
+        </div>
+        <button id="criar-exemplo">Criar pedido de exemplo</button>
+      </header>
+      <section class="metricas">
+        <article>
+          <span>Pedidos</span><strong id="total-pedidos">0</strong>
+        </article>
+        <article>
+          <span>Novos</span><strong id="pedidos-novos">0</strong>
+        </article>
+        <article>
+          <span>Conversas</span><strong id="total-chats">0</strong>
+        </article>
+        <article>
+          <span>Média</span><strong id="media-avaliacoes">0,0 ★</strong>
+        </article>
+      </section>
+      <section id="pedidos" class="painel-pedidos">
+        <div class="cabecalho-painel">
+          <h2>Pedidos recentes</h2>
+          <select id="filtro-status">
+            <option value="Todos">Todos</option>
+            <option>Novo</option>
+            <option>Em preparo</option>
+            <option>Pronto</option>
+            <option>Entregue</option>
+          </select>
+        </div>
+        <div id="lista-pedidos" class="lista-pedidos"></div>
+      </section>
+      <section id="suporte" class="painel-pedidos painel-extra">
+        <h2>Suporte</h2>
+        <p>Responda às mensagens dos clientes.</p>
+        <div id="lista-chats" class="lista-admin"></div>
+      </section>
+      <section id="avaliacoes" class="painel-pedidos painel-extra">
+        <h2>Avaliações</h2>
+        <p>Acompanhe ou exclua comentários.</p>
+        <div id="lista-avaliacoes" class="lista-admin"></div>
+      </section>
+    </main>
+    <script src="admin.js"></script>
+  </body>
+</html>

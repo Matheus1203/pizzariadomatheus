@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Avaliação | Pizzaria do Matheus</title>
+    <link rel="stylesheet" href="atendimento.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <a href="index.html">🍕 Pizzaria do Matheus</a
+      ><a href="index.html">← Voltar</a>
+    </header>
+    <main class="pagina">
+      <div class="titulo">
+        <span>Sua opinião importa</span>
+        <h1>Como foi sua experiência?</h1>
+      </div>
+      <section class="cartao">
+        <label>Seu nome<input id="nome" maxlength="60" /></label>
+        <div class="estrelas">
+          <button class="estrela" data-nota="1">★</button
+          ><button class="estrela" data-nota="2">★</button
+          ><button class="estrela" data-nota="3">★</button
+          ><button class="estrela" data-nota="4">★</button
+          ><button class="estrela" data-nota="5">★</button>
+        </div>
+        <label
+          >Comentário<textarea
+            id="comentario"
+            maxlength="600"
+          ></textarea></label
+        ><button id="enviar">Enviar avaliação</button>
+        <p id="resultado" class="resultado"></p>
+      </section>
+    </main>
+    <footer class="rodape">Pizzaria do Matheus • Obrigado!</footer>
+    <script src="avaliacao.js"></script>
+  </body>
+</html>
