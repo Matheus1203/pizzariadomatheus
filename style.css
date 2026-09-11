@@ -135,6 +135,24 @@ button {
   margin: -26px -26px 8px;
   border-radius: 18px 18px 0 0;
 }
+.pizza-sabor {
+  background: center/cover no-repeat;
+}
+.margherita {
+  background-image: linear-gradient(135deg, #bc3d2d88, #f6cf6688), url("imagens/quatro-queijos.png");
+}
+.portuguesa {
+  background-image: linear-gradient(135deg, #c98b3688, #7b402688), url("imagens/calabresa.png");
+}
+.pepperoni {
+  background-image: linear-gradient(135deg, #9b1d1d77, #2d120c66), url("imagens/calabresa.png");
+}
+.vegetariana {
+  background-image: linear-gradient(135deg, #34723f88, #f0c65c77), url("imagens/quatro-queijos.png");
+}
+.chocolate {
+  background-image: linear-gradient(135deg, #4a2514aa, #bd6f3c77), url("imagens/capa-pizzaria.png");
+}
 .pizza-card p {
   flex: 1;
 }

@@ -3,6 +3,11 @@ const sabores = [
   { nome: "Quatro Queijos", preco: 48.9 },
   { nome: "Frango com Bacon", preco: 45.9 },
   { nome: "Carne Seca", preco: 51.9 },
+  { nome: "Margherita", preco: 44.9 },
+  { nome: "Portuguesa", preco: 49.9 },
+  { nome: "Pepperoni", preco: 52.9 },
+  { nome: "Vegetariana", preco: 46.9 },
+  { nome: "Chocolate", preco: 39.9 },
 ];
 const primeiro = document.querySelector("#primeiro-sabor"),
   segundo = document.querySelector("#segundo-sabor"),
